@@ -43,7 +43,7 @@ int elimina(char mat[][COLS], int rows) {
     for (int i = 0; i < rows; i++) {
         int delete = TRUE;
         for(int j = 0; j < COLS/2 && delete; j++) {
-            delete = mat[i][j] == mat[i][COLS-j];
+            delete = mat[i][j] == mat[i][COLS-j-1];
         }
         if(!delete) {
             for(int j = 0; j < COLS; j++) {
